@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6666;
+  padding: 15px 200px;
+}
+
+.navbar h3 {
+  margin: 0;
+}
+
+.menu-img {
+  height: 20px;
+  width: 30px;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 60px); 
+}
+
+.lorem {
+  width: 40%;
+  padding: 100px;
+  background: linear-gradient(to right, #fff9c4, #f8bbd0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.image-section {
+  width: 60%;
+  background-image: url("pexels-robin-stickel-70497.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.click {
+  background-color: #ff6666;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+}
+.last-section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fff9c4, #f8bbd0);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+/* IMAGE GRID */
+.images-grid {
+  display: flex;
+  gap: 20px;
+}
+
+/* LEFT STACKED IMAGES */
+.left-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* RIGHT TALL IMAGE */
+.right-image img {
+  width: 250px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* SIDE CONTENT BOX */
+.side-box {
+  background-color: #ff6666;
+  padding: 50px;
+  max-width: 400px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-box p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.side-box h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.side-box span {
+  font-size: 16px;
+  cursor: pointer;
+}
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 15px 60px;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .lorem {
+    padding: 60px;
+  }
+
+  .last-section {
+    padding: 60px 40px;
+  }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .menu-img {
+    margin-top: 10px;
+  }
+
+  /* HERO SECTION */
+  .main {
+    flex-direction: column;
+  }
+
+  .lorem,
+  .image-section {
+    width: 100%;
+  }
+
+  .lorem {
+    padding: 50px 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .image-section {
+    height: 300px;
+  }
+
+  /* LAST SECTION */
+  .last-section {
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 30px;
+  }
+
+  .images-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-image img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .left-images {
+    flex-direction: row;
+  }
+
+  .left-images img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .side-box {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .side-box h2 {
+    font-size: 28px;
+  }
+}
+
